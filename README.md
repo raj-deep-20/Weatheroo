@@ -1,5 +1,5 @@
 **🌦️ Weatheroo - A Basic Weather App using API**
-Weatherify is a responsive weather web application built with HTML, Tailwind CSS, and JavaScript. 
+Weatheroo is a responsive weather web application built with HTML, Tailwind CSS, and JavaScript. 
 It uses the OpenWeatherMap API to fetch real-time weather data and offers features like city search, dark/light mode.
 
 
