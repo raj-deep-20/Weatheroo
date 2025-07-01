@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatheroo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen flex items-center justify-center p-4">
+  <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl shadow-xl w-full max-w-md text-center">
+    <h1 class="text-3xl font-bold mb-4 teal-400">Weatheroo</h1>
+
+    <div class="flex gap-2 mb-4">
+      <input id="cityInput" type="text" placeholder="Enter city name" class="flex-1 p-2 rounded bg-gray-200 dark:bg-gray-700 text-black dark:text-white focus:outline-none" />
+      <button onclick="getWeather()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Know Weather</button>
+    </div>
+
+    <div class="flex justify-center gap-2 mb-4">
+      <button onclick="searchCity('Kolkata')" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">Kolkata</button>
+      <button onclick="searchCity('Mumbai')" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">Mumbai</button>
+      <button onclick="searchCity('Delhi')" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">Delhi</button>
+    </div>
+
+    <div class="flex items-center justify-center mb-4">
+      <button id="darkModeToggle" onclick="toggleDarkMode()" class="text-black dark:text-white">
+        <span id="darkModeIcon"></span>
+      </button>
+    </div>
+
+    <div id="weatherResult" class="hidden mt-6">
+      <div class="text-2xl font-semibold" id="cityName">Kolkata</div>
+      <div id="summaryMessage" class="text-sm text-gray-500 dark:text-gray-400 mb-1">Its Sunny today!</div>
+      <div class="text-4xl">35°C</div>
+      <div class="mt-1">Humidity: <span id="humidity">45</span>%</div>
+      <div>Wind: <span id="windSpeed">10</span> km/h</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
