@@ -28,6 +28,6 @@ const apiKey = "**YOUR_API_KEY_HERE**";
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/weatherify.git
-cd weatherify
+git clone https://github.com/yourusername/weatheroo.git
+cd weatheroo
 ```
